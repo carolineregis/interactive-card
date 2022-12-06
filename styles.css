@@ -1,0 +1,53 @@
+.full-background {
+  display: flex;
+}
+
+.image-bg {
+  height: 100%;
+}
+
+.main-bg {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-info-container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.expire-date {
+  display: flex;
+}
+
+.expire-date > input {
+  width: 25%;
+}
+
+.security-info-container {
+  display: flex;
+}
+
+.expiring-info {
+  flex-direction: column;
+  display: flex;
+}
+
+.security-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.verification-code {
+  max-width: 94px;
+}
