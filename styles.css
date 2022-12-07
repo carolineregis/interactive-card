@@ -1,6 +1,9 @@
-.full-background {
-  display: flex;
+* {
+  font-family: 'Space Grotesk';
+  font-weight: 500;
+  font-size: 18px;
 }
+
 
 .image-bg {
   height: 100%;
@@ -14,28 +17,44 @@
   justify-content: center;
 }
 
+.main-page {
+  background-image: url('images/main_background.jpg');
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 70px 30px 70px 30px;
+}
+
+.card-container {
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ padding: 0px !important;
+}
+
+.front-card {
+  width: 400px;
+  height: 200px;
+  position: fixed;
+  border: 2px solid red;
+}
+
+
 .card-info-container {
-  width: fit-content;
+  width: 300px;
   display: flex;
   flex-direction: column;
 }
 
-.card-info {
-  display: flex;
-  flex-direction: column;
+.input-label {
+  padding-bottom: 5px;
 }
 
-.expire-date {
-  display: flex;
-}
 
 .expire-date > input {
-  width: 25%;
+  width: 35%;
+  margin-right: 13px;
 }
 
-.security-info-container {
-  display: flex;
-}
 
 .expiring-info {
   flex-direction: column;
