@@ -42,10 +42,57 @@ input {
 }
 
 .front-card {
-  width: 400px;
+  background-image: url('images/bg-card-front.png');
+  width: 370px;
   height: 200px;
   position: fixed;
-  border: 2px solid red;
+  border-radius: 10px;
+  top: 200px;
+  left: 150px;
+}
+
+.front-card-header {
+  padding: 20px 30px;
+}
+
+.front-card-body {
+  padding: 20px 30px;
+}
+
+.card-number-field {
+  font-size: 24px;
+  padding-right: 10px;
+  color: white;
+}
+
+.card-name {
+  color: white;
+  font-size: 13px;
+}
+
+.exp-date {
+  color: white;
+  font-size: 13px;
+}
+
+.back-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('images/bg-card-back.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 370px;
+  height: 200px;
+  position: fixed;
+  border-radius: 10px;
+  bottom: 375px;
+  left: 260px;
+}
+
+.cvc-field {
+  margin-left: 245px;
+  padding-bottom: 5px;
 }
 
 
