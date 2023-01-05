@@ -27,26 +27,25 @@
         <div class="card-info-container">
           <div class="card-info pb-4 d-flex flex-column">
             <span class="input-label"> CARDHOLDER NAME </span>
-            <input type="text" id="userName" onkeyup="getUserName()" placeholder="e.g. Manoel Gomes do Caneta Azul">
+            <input type="text" id="userName" onkeyup="getUserName()" maxlength="256" placeholder="e.g. Manoel Gomes do Caneta Azul">
           </div>
   
           <div class="card-info pb-4 d-flex flex-column">
-            <span class="input-label" id="cardNumber"> CARD NUMBER </span>
-            <input type="number" placeholder="e.g. 1234 5678 9123 0000">
+            <span class="input-label"> CARD NUMBER </span>
+            <input id="userNumber" onkeyup="getCardNumber()" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
           </div>
   
           <div class="card-info pb-4 d-flex flex-row">
             <div class="expiring-info">
               <span class="input-label"> EXP. DATE (MM/YY) </span>
               <div class="expire-date d-flex">
-                <input type="text" placeholder="MM">
-                <input type="text" placeholder="YY">
+                <input type="text" placeholder="00/00">
               </div>
             </div>
   
             <div class="security-info">
               <span class="input-label"> CVC</span>
-              <input type="text" placeholder="e.g. 123" class="verification-code">
+              <input type="text" placeholder="e.g. 123" maxlength="3" class="verification-code">
             </div>
           </div>
           <button type="button" class="btn btn-dark"> Confirm </button>
@@ -61,10 +60,7 @@
 
         <div class="front-card-body">
           <div class="card-number-fields">
-            <span class="card-number-field"> 0000 </span>
-            <span class="card-number-field"> 0000 </span>
-            <span class="card-number-field"> 0000 </span>
-            <span class="card-number-field"> 0000 </span>
+            <span class="card-number-field" id="cardNumber"> 0000 0000 0000 0000 </span>
           </div>
 
           <div class="front-card-footer d-flex pt-2 justify-content-between">
